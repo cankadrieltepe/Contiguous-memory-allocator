@@ -1,13 +1,23 @@
-This project involves managing a contiguous region of memory of size MAX where addresses may range from 0...MAX −1. My program responds to four different
-requests:
-1. Request for a contiguous block of memory
-2. Release of a contiguous block of memory
-3. Compact unused holes of memory into one single block
-4. Report the regions of free and allocated memory
-My program is able to work in two different modes, one is the interactive
-mode and the other is scripted mode. This project was developed for my Comp304 project.
+# Contiguous Memory Allocator (COMP 304 Project 2)
 
+This project implements a **contiguous memory allocation simulator** in **C** for  
+**COMP 304 – Operating Systems (Fall 2025)**.
 
+The program manages a contiguous memory region and supports **first-fit, best-fit, and worst-fit** allocation strategies, along with memory release, compaction, and status reporting.
+
+---
+
+## Features
+- Request memory for a process using:
+  - **First Fit (F/f)**
+  - **Best Fit (B/b)**
+  - **Worst Fit (W/w)**
+- Release allocated memory for a process
+- Compact fragmented memory into a single hole
+- Display allocated and free memory regions with address ranges
+- Supports **interactive mode** and **scripted mode**
+
+---
 
 
 References
